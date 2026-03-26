@@ -1,7 +1,7 @@
 let originalData = [1, 2, 3, { label: 'shared object' }];
 
-// slice() creates a shallow copy of the array.
-// Be aware that nested objects/arrays are still shared by reference.
+// slice() creates a shallow copy of the array
+// when making this copy, nested objects/arrays are still shared by reference
 let clonedData = originalData.slice();
 
 console.log('Original:', originalData);
